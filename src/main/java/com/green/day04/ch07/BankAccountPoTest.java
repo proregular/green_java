@@ -18,6 +18,6 @@ public class BankAccountPoTest {
 
         deposit = BankAccountPO.checkMyBalance();
 
-        System.out.println("작액2 : " + deposit);
+        System.out.println("잔액2 : " + deposit);
     }
 }

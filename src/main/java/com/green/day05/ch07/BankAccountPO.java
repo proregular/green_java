@@ -1,4 +1,4 @@
-package com.green.day04.ch07;
+package com.green.day05.ch07;
 
 public class BankAccountPO {
     static int balance = 0;

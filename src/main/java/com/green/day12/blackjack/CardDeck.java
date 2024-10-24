@@ -28,9 +28,9 @@ public class CardDeck {
         shuffle();
 
         //enhanced-for문으로 card객체 주소값 출력
-        for(Card item : cards) {
-            System.out.println(item);
-        }
+//        for(Card item : cards) {
+//            System.out.println(item);
+//        }
     }
 
     public void checkCard() {

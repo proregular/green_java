@@ -7,11 +7,15 @@ public class Gamer {
     //Card객체 주소값 여러개 저장할 수 있어야 합니다.
     //ArrayList 사용할꺼임
     // 맴버필드 선언, 변수명은 cards
-    private final List<Card> cards;
-    private int point;
+    protected final List<Card> cards;
+    protected int point;
 
     public Gamer() {
         cards = new ArrayList();
+    }
+
+    public int getPoint() {
+        return point;
     }
 
     public List<Card> openCards() {

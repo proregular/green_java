@@ -38,9 +38,40 @@ class CardTest3 {
     public static void main(String[] args) {
         CardDeck cd = new CardDeck();
         Dealer dealer = new Dealer();
+        Gamer gammer = new Gamer();
+
         dealer.receiveCard(cd.draw());
         dealer.receiveCard(cd.draw());
         dealer.receiveCard(cd.draw());
         dealer.showYourCards();
+        gammer.receiveCard(cd.draw());
+        gammer.receiveCard(cd.draw());
+        gammer.receiveCard(cd.draw());
+        gammer.showYourCards();
+        System.out.println(gammer.getPoint());
+    }
+}
+
+class CardTest4 {
+    public static void main(String[] args) {
+        CardDeck cd = new CardDeck();
+        Dealer dealer = new Dealer();
+        Gamer gammer = new Gamer();
+        Rule rule = new Rule();
+
+        System.out.println("딜러: ");
+        dealer.receiveCard(cd.draw());
+        dealer.receiveCard(cd.draw());
+        dealer.showYourCards();
+        System.out.println(dealer.getPoint());
+        System.out.println("----------------------");
+        System.out.println("게이머: ");
+        gammer.receiveCard(cd.draw());
+        gammer.receiveCard(cd.draw());
+        gammer.receiveCard(cd.draw());
+        gammer.showYourCards();
+        System.out.println(gammer.getPoint());
+        System.out.println("----------------------");
+        rule.getWinner(dealer, gammer);
     }
 }

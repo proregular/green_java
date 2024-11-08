@@ -55,4 +55,8 @@ public class Board {
     public String getUpdatedAt() {
         return updatedAt;
     }
+
+    public String toString() {
+        return String.format("%d, %s, %s, %s, %s, %s", boardId, title, contents, writer, createAt, updatedAt);
+    }
 }
